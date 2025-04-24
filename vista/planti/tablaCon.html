@@ -1,0 +1,43 @@
+<tr id="{_ID_}">
+    <td>
+        <form method="POST" action="../controlador/conteoPersonas.php" style="{_STYLEC_}">
+            <input type="hidden" name="idfam" id="idfam" value="{_ID_}">
+            
+            
+
+            <button type="submit" style="">PRESENTE</button>
+        </form>
+        {_CONTE_}
+    </td>
+    <td>{_NOMBRE_}</td>
+    <td>{_APELLIDO_}</td>
+    <td>{_CEDULA_}</td>
+    <td>{_CODIGO_}</td>
+    <td>{_TORRE_}</td>
+    <td>{_TITU_}</td>
+    
+    <td style="width: 20%;">
+    	{_BRZ_}
+    </td>
+    <td>
+        <form method="POST" action="../controlador/cargarHora.php">
+            <input type="hidden" name="idfam" id="idfam" value="{_ID_}">
+            <label style="{_STYLEE_}">entrada</label>
+            <input type="time" name="horae" id="horae" style="{_STYLEE_}">
+
+            <button type="submit" style="display: none;"></button>
+        </form>
+        {_HE_}
+    </td>
+    <td>
+        <form method="POST" action="../controlador/cargarHora.php">
+            <input type="hidden" name="idfam" id="idfam" value="{_ID_}">
+            
+            <label style="{_STYLES_}">salida</label>
+            <input type="time" name="horas" id="horas"  style="{_STYLES_}">
+
+            <button type="submit" style="display: none;"></button>
+        </form>
+        {_HS_}
+    </td>
+</tr>
